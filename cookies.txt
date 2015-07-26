@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+october02.themes.tvda.eu	TRUE	/demo02/	FALSE	1999999999	nf_wp_session	3c23cb35b6c0c0e7466802a857b1e80c%7C%7C1435345880%7C%7C1435344080
+october02.themes.tvda.eu	TRUE	/demo02/	FALSE	1999999999	wordpress_test_cookie	WP+Cookie+check
+october02.themes.tvda.eu	TRUE	/	FALSE	1999999999	PHPSESSID	la5lt3u9pfbm21d2n56ibkoih1
+
