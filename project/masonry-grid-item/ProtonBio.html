@@ -16,7 +16,7 @@
             </script>
         <link rel="alternate" type="application/rss+xml" title="James October &raquo; Feed" href="../../feed/index.html" />
 <link rel="alternate" type="application/rss+xml" title="James October &raquo; Comments Feed" href="../../comments/feed/index.html" />
-	
+
 		<script type="text/javascript">
 			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/october02.themes.tvda.eu\/demo02\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
 			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
@@ -70,7 +70,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 <script type='text/javascript' src='../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min42d8.js?ver=2.3.10'></script>
 <script type='text/javascript' src='../../wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart3428.js?ver=4.5.2'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc0db0.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" />
 <link rel='prev' title='Fullscreen Presentation' href='../fullscreen-presentation/index.html' />
 <link rel='next' title='Grid Portfolio Item' href='../grid-portfolio-item-2/index.html' />
 <meta name="generator" content="WordPress 4.2.2" />
@@ -81,23 +81,23 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 			jQuery(document).ready(function() {
 				// CUSTOM AJAX CONTENT LOADING FUNCTION
 				var ajaxRevslider = function(obj) {
-				
+
 					// obj.type : Post Type
 					// obj.id : ID of Content to Load
 					// obj.aspectratio : The Aspect Ratio of the Container / Media
 					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-					
+
 					var content = "";
 
 					data = {};
-					
+
 					data.action = 'revslider_ajax_call_front';
 					data.client_action = 'get_slider_html';
 					data.token = '8787dd6dec';
 					data.type = obj.type;
 					data.id = obj.id;
 					data.aspectratio = obj.aspectratio;
-					
+
 					// SYNC AJAX REQUEST
 					jQuery.ajax({
 						type:"post",
@@ -107,17 +107,17 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 						async:false,
 						success: function(ret, textStatus, XMLHttpRequest) {
 							if(ret.success == true)
-								content = ret.data;								
+								content = ret.data;
 						},
 						error: function(e) {
 							console.log(e);
 						}
 					});
-					
+
 					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
-					 return content;						 
+					 return content;
 				};
-				
+
 				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
 				var ajaxRemoveRevslider = function(obj) {
 					return jQuery(obj.selector+" .rev_slider").revkill();
@@ -128,7 +128,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 					if (jQuery.fn.tpessential != undefined) {
 						clearInterval(extendessential);
 						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
-							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});
 							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
 							// func: the Function Name which is Called once the Item with the Post Type has been clicked
 							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
@@ -377,7 +377,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 	.woocommerce-page .widget_price_filter .ui-slider .ui-slider-handle {
 		border-color: #31ca8f;
 	}
-	
+
 	#page-loader .spinner, #page-loader .spinner:before, #page-loader .spinner:after {
 		border-top-color: #31ca8f;
 	}
@@ -583,7 +583,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 		border-color: #31ca8f;
 	}
 
-			
+
 	.iv-layout.header a {
 		color: #ff6699;
 	}
@@ -591,7 +591,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 	.iv-layout.header .woo-cart .basket-wrapper .basket {
 		border-color: #ffffff;
 	}
-			
+
 	.iv-layout.header a:hover,
 	.iv-layout.header .woo-cart:hover .basket {
 		color: #bcbcbc;
@@ -621,7 +621,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 		<i class="fa fa-angle-up " style=""></i>
 	</a>
 
-	
+
 		<div class="ivan-ml-aside-container"><div class="ivan-main-layout-aside aside-header-wrapper ivan-main-layout-aside-left">
 
 <div class="iv-layout header simple-left-right fixed-height centered-menu-items standard">
@@ -629,72 +629,72 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 		<div class="row-fit">
 
 			<div class="header-top-area">
-				<a href="index.html" class="logo" style=""><img class="logo-normal" src="../../Img/Muzai.png" width="187" height="60" alt="Muzai Records Placeholder"></a>			</div>
+				<a href="../../index.html" class="logo" style=""><img class="logo-normal" src="../../Img/Muzai.png" width="187" height="60" alt="Muzai Records Placeholder"></a>			</div>
 
 			<div class="header-bottom-area">
 
 				<div class="modules-row">
 
-					
+
 		<div class="iv-module responsive-menu hidden-lg hidden-md">
 			<div class="centered">
 				<a class="mobile-menu-trigger" href="#" data-selector=".header" data-id="header-menu-wrap"><i class="fa fa-bars"></i></a>
 			</div>
 		</div>
 
-			
 
-					
-					
-					
+
+
+
+
 				</div>
 
 				<div class="mega_main_menu nav_menu primary icons-left first-lvl-align-left first-lvl-separator-none direction-vertical responsive-disable mobile_minimized-disable dropdowns_animation-none version-1-1-0 hidden-xs hidden-sm iv-module menu-wrapper no-search">
 				<ul id="menu-main-menu" class="mega_main_menu_ul  menu"><li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="../../index.html" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">Home</span></span></a></li>
-<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="../../about-me/index.html" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">Artists</span></span></a></li>
+<li id="menu-item-160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-160 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="../../about-me/index.html" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">Press</span></span></a></li>
 <li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="http:/muzairecords.greedbag.com" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">Our Past Releases</span></span></a></li>
-<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="FAQ/index.html" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">FAQ</span></span></a></li>
+<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="../../FAQ/index.html" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">FAQ</span></span></a></li>
 <li id="menu-item-155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-155 default_dropdown default_style drop_to_right  submenu_default_width columns1"><a href="../../contact-me/index.html" class="item_link  disable_icon"><span class="item_link_content"><span class="link_text">Contact</span></span></a></li>
 </ul><!-- /class="mega_main_menu_ul  menu" --></div>
 				<div class="hidden-xs hidden-sm single-module-row">
-					
+
 		<div class="iv-module social-icons hidden-xs hidden-sm">
 			<div class="centered">
-									
+
 									<a href="https://www.facebook.com/MUZAIRecords" target="_blank"><i class="fa fw fa-facebook"></i></a>
 									<a href="https://instagram.com/muzairecords/" target="_blank"><i class="fa fw fa-instagram"></i></a>
 									<a href="https://twitter.com/muzairecords" target="_blank"><i class="fa fw fa-twitter"></i></a>
 									<a href="mailto:benjii@muzairecords.com" target="_"><i class="fa fw fa-envelope"></i></a>
 
-				
+
 						</div>
 		</div>
 
-		
+
 									</div>
 
 				<div class="hidden-xs hidden-sm portfolio-filter-receiver">
 
 				</div>
 
-				
+
 					<div class="hidden-xs hidden-sm widget-area">
 											</div>
 
-				
+
 			</div>
 
-		</div>					
+		</div>
 	</div>
 </div></div><div class="ivan-main-layout-aside-right">
-		
-	<div class="title-wrapper-divider blog-version"></div>		
-		
-	
+
+	<div class="title-wrapper-divider blog-version"></div>
+
+
 	<div class="iv-layout content-wrapper content-full single-project no-title-wrapper">
 		<div class="container">
 
-			
+
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 site-main" role="main">
 
@@ -704,66 +704,66 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 								<div data-speed="0.3" data-height="960"  class="ivan-custom-wrapper full_width both_sides custom-height parallax-vertical "  style="padding-top: 0px;margin-bottom: 0px;height: 950px;background-image: url(Proton_Beast_1440.jpg);">	<div  class="vc_row wpb_row vc_row-fluid">
 	<div class="vc_col-sm-12 wpb_column vc_column_container ">
 		<div class="wpb_wrapper">
-			
-		</div> 
-	</div> 
+
+		</div>
+	</div>
 </div></div><div  class="ivan-custom-wrapper theme_default both_sides "  style="padding-top: 160px;padding-bottom: 160px;margin-bottom: 0px;">	<div  class="vc_row wpb_row vc_row-fluid">
 	<div class="vc_col-sm-12 wpb_column vc_column_container ">
 		<div class="wpb_wrapper">
-			
+
 	<div class="wpb_text_column wpb_content_element  vc_1433766232863 ">
 		<div class="wpb_wrapper">
 			<h1 style="text-align: center;">Proton Beast</h1>
 <h3 style="text-align: center; letter-spacing: 10px;">Doom Disco</h3>
 
-		</div> 
+		</div>
 	</div> <div   class="ivan-custom-wrapper " style="padding-top: 80px;margin-bottom: 0px !important;">	<div  class="vc_row wpb_row vc_inner vc_row-fluid">
 	<div class="vc_col-sm-6 wpb_column vc_column_container ">
 		<div class="wpb_wrapper">
-			
+
 	<div class="wpb_text_column wpb_content_element  vc_1433766334911  wpb_animate_when_almost_visible wpb_bottom-to-top">
 		<div class="wpb_wrapper">
 			<p>
-		Proton Beast is a three piece noise band from Auckland City, utilising feedback drenched guitars and vocoders to create a sound befitting of our technologically obsessed times. Their debut full length Digitizer will be out on vinyl and digitally through MUZAI in 2014. Formed in 2011 Proton Beast has slowly honed in on it's own sound through constant evolution and practice room reboots. 
+		Proton Beast is a three piece noise band from Auckland City, utilising feedback drenched guitars and vocoders to create a sound befitting of our technologically obsessed times. Their debut full length Digitizer will be out on vinyl and digitally through MUZAI in 2014. Formed in 2011 Proton Beast has slowly honed in on it's own sound through constant evolution and practice room reboots.
 		</p>
 
-		</div> 
-	</div> 
-		</div> 
-	</div> 
+		</div>
+	</div>
+		</div>
+	</div>
 
 	<div class="vc_col-sm-6 wpb_column vc_column_container ">
 		<div class="wpb_wrapper">
-			
+
 	<div class="wpb_text_column wpb_content_element  vc_1433766347103  wpb_animate_when_almost_visible wpb_bottom-to-top">
 		<div class="wpb_wrapper">
 			<p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. An eros argumentum vel, elit diceret duo eu, quo et aliquid ornatus delicatissimi. Proin eu diam lorem, id scelerisque sapien. In accumsan metus at magna vehicula placerat tempor varius ipsum. libero, non congue odio vulputate eu. Phasellus euismod magna ac est. Proin facilisis varius nunc. Curabitur eros risus, ultrices et dui ut, luctus accumsan nibh.</p>
 
-		</div> 
-	</div> 
-		</div> 
-	</div> 
+		</div>
+	</div>
+		</div>
+	</div>
 </div></div><!-- .ivan-custom-wrapper -->
-		</div> 
-	</div> 
+		</div>
+	</div>
 
 							</div><!-- .entry-content -->
 
-														
+
 						</article>
 
 					</div>
 				</div><!-- .row -->
 
-			
+
 		</div>
 	</div> -->
 
-	
-			
-		
 
-		
+
+
+
+
 
 
 
@@ -774,32 +774,32 @@ var wc_add_to_cart_params = {"ajax_url":"\/demo02\/wp-admin\/admin-ajax.php","i1
 		<div class="container">
 			<div class="row">
 
-				
+
 				<div class="col-xs-6 col-sm-6 col-md-6 bottom-footer-left-area">
 
-					
+
 		<div class="iv-module custom-text ">
 			<div class="centered">
 				<div style="text-align: center;">ALL RIGHT RESERVED.</div>			</div>
 		</div>
 
-		
-					
+
+
 								</div>
-				
+
 				<div class="col-xs-6 col-sm-6 col-md-6 bottom-footer-right-area">
-				
-					
-					
+
+
+
 									</div>
 
-			</div>					
+			</div>
 		</div>
 	</div>
 
 
 </div><!-- .ivan-main-layout-aside-right --><div style="clear: both;"></div></div><!-- .ivan-aside-container -->
-	
+
 </div><!-- #all-site-wrapper -->
 
 <style type="text/css">.vc_1433766232863 h1{font-family:proxima-nova !important;font-size:80px !important;text-transform:uppercase !important;margin-bottom:5px !important;}.vc_1433766232863 h3{font-family:proxima-nova !important;color:#999999 !important;text-transform:uppercase !important;}</style><script type='text/javascript'>
@@ -850,7 +850,7 @@ var wc_add_to_cart_variation_params = {"i18n_no_matching_variations_text":"Sorry
 <script type='text/javascript' src='../../wp-content/plugins/js_composer/assets/js/js_composer_front3428.js?ver=4.5.2'></script>
 <script type="text/javascript">
                                                                         </script>
-	
+
 </body>
 
 <!-- Mirrored from october02.themes.tvda.eu/demo02/project/masonry-grid-item/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jun 2015 07:22:17 GMT -->
